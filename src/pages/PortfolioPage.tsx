@@ -163,7 +163,7 @@ const PortfolioPage = () => {
                 </motion.div>
               ))}
 
-              {/* Video Edits - YouTube Shorts */}
+              {/* Video Edits */}
               {(activeCategory === 'all' || activeCategory === 'video') && videoWorks.map((video, index) => (
                 <motion.div
                   key={`video-${index}`}
@@ -174,7 +174,7 @@ const PortfolioPage = () => {
                 >
                   <div className="relative aspect-[9/16] bg-gray-900">
                     <iframe
-                      src={`${video.embedUrl}?controls=0`}
+                      src={video.embedUrl}
                       title={video.title}
                       className="absolute inset-0 w-full h-full"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -384,20 +384,20 @@ const videoWorks = [
   {
     title: "Product Launch Teaser",
     description: "Dynamic short-form video showcasing new product features",
-    embedUrl: "https://youtube.com/shorts/7X2TizWoY0s?si=IcsCnyiIJgDFHjOX",
-    url: "https://www.youtube.com/shorts/7X2TizWoY0s"
+    embedUrl: "https://www.instagram.com/reel/DHpS3L7NGCg/embed",
+    url: "https://www.instagram.com/reel/DHpS3L7NGCg/"
   },
   {
     title: "Brand Story",
     description: "Engaging narrative about brand values and mission",
-    embedUrl: "https://youtube.com/shorts/tgc8IHu5WL8?si=NIXkYVRG3IvbClM_",
-    url: "https://www.youtube.com/shorts/tgc8IHu5WL8"
+    embedUrl: "https://youtube.com/embed/7X2TizWoY0s",
+    url: "https://youtube.com/shorts/7X2TizWoY0s?si=O7xL21D9hSOUQWcZ"
   },
   {
     title: "Tutorial Series",
     description: "Quick tips and tricks for creative software",
-    embedUrl: "https://youtube.com/shorts/GFXxY-5m6Ek?si=tuSGB781hISREieg",
-    url: "https://www.youtube.com/shorts/GFXxY-5m6Ek"
+    embedUrl: "https://youtube.com/embed/GFXxY-5m6Ek",
+    url: "https://youtube.com/shorts/GFXxY-5m6Ek"
   }
 ];
 
