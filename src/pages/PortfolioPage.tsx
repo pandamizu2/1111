@@ -206,114 +206,114 @@ const PortfolioPage = () => {
 // 3D product visualization works
 const productWorks = [
   {
-  title: "Dish Soap Bottle",
-  description: "Stylized transparent plastic bottle with colored liquid and realistic lighting",
-  image: "https://i.imgur.com/NslPjJ3.png",
-  tools: ["Blender", "Cycles", "Product"]
-},
-{
-  title: "Minimalist Perfume Bottle",
-  description: "Frosted glass material with subtle reflections for a luxury cosmetic look",
-  image: "https://i.imgur.com/V6fpOW9.jpeg",
-  tools: ["Blender", "Cycles", "Cosmetic"]
-},
-{
-  title: "Whey Protein Jar",
-  description: "High-detail product visualization with label design and soft studio lighting",
-  image: "https://i.imgur.com/OKn8jFu.png",
-  tools: ["Blender", "Cycles", "Packaging"]
-},
-{
-  title: "Medical Box Icon",
-  description: "Stylized 3D model of a medical first-aid box for icons or games",
-  image: "https://i.imgur.com/mAt0oNx.jpeg",
-  tools: ["Blender", "Cycles", "Stylized"]
-},
-{
-  title: "Coca-Cola Can",
-  description: "Realistic soda can design with branding and reflective aluminum material",
-  image: "https://i.imgur.com/qUoTiaE.jpeg",
-  tools: ["Blender", "Cycles", "Product"]
-},
-{
-  title: "Smartphone Mockup",
-  description: "Modern phone concept render with subtle glow and reflections",
-  image: "https://i.imgur.com/rVQYIjW.jpeg",
-  tools: ["Blender", "Cycles", "Tech"]
-},
-{
-  title: "Supplement Bottle",
-  description: "Plastic jar for supplement or protein packaging with clean lighting",
-  image: "https://i.imgur.com/vbpaR0Z.jpeg",
-  tools: ["Blender", "Cycles", "Packaging"]
-},
-{
-  title: "Spray Bottle",
-  description: "Sleek cosmetic spray bottle design with metallic finish",
-  image: "https://i.imgur.com/zTgt8BF.jpeg",
-  tools: ["Blender", "Cycles", "Cosmetic"]
-},
-{
-  title: "Black Tumbler",
-  description: "Stylized tumbler model with glossy black material for product mockups",
-  image: "https://i.imgur.com/CBUV54m.jpeg",
-  tools: ["Blender", "Cycles", "Product"]
-},
-{
-  title: "Plastic Kettle",
-  description: "Simple water kettle in solid plastic material for home appliance modeling",
-  image: "https://i.imgur.com/iVbVWX9.jpeg",
-  tools: ["Blender", "Cycles", "Product"]
-},
-{
-  title: "Square Perfume Bottle",
-  description: "Dark glass perfume bottle design with minimalist aesthetics",
-  image: "https://i.imgur.com/eeV6JNv.jpeg",
-  tools: ["Blender", "Cycles", "Cosmetic"]
-},
-{
-  title: "Woven Basket",
-  description: "Handmade-style 3D basket with realistic weaving pattern",
-  image: "https://i.imgur.com/Z2iyin6.jpeg",
-  tools: ["Blender", "Cycles", "Craft"]
-},
-{
-  title: "Bread Rolls",
-  description: "Realistic bakery-style bread rolls with detailed bump texture",
-  image: "https://i.imgur.com/vaRzZun.jpeg",
-  tools: ["Blender", "Cycles", "Food"]
-},
-{
-  title: "Safety Goggles",
-  description: "Functional safety eyewear with semi-transparent plastic material",
-  image: "https://i.imgur.com/QXLOsSe.jpeg",
-  tools: ["Blender", "Cycles", "Gear"]
-},
-{
-  title: "Halloween Pumpkin",
-  description: "Cute stylized pumpkin with witch hat, great for seasonal content",
-  image: "https://i.imgur.com/bTjoecb.jpeg",
-  tools: ["Blender", "Cycles", "Stylized"]
-},
-{
-  title: "Katana Sword",
-  description: "Clean render of a curved Japanese sword with dark lighting setup",
-  image: "https://i.imgur.com/oManWn1.jpeg",
-  tools: ["Blender", "Cycles", "Weapon"]
-},
-{
-  title: "Wireless Mouse",
-  description: "Modern mouse design with smooth contours and subtle reflections",
-  image: "https://i.imgur.com/8k8rTah.jpeg",
-  tools: ["Blender", "Cycles", "Tech"]
-},
-{
-  title: "Fish Cutting Board",
-  description: "Cartoonish food scene featuring sliced fish on a wooden board",
-  image: "https://i.imgur.com/DwkATyt.png",
-  tools: ["Blender", "Cycles", "Stylized"]
+    title: "Dish Soap Bottle",
+    description: "Stylized transparent plastic bottle with colored liquid and realistic lighting",
+    image: "https://i.imgur.com/NslPjJ3.png",
+    tools: ["Blender", "Cycles", "Product"]
+  },
+  {
+    title: "Minimalist Perfume Bottle",
+    description: "Frosted glass material with subtle reflections for a luxury cosmetic look",
+    image: "https://i.imgur.com/V6fpOW9.jpeg",
+    tools: ["Blender", "Cycles", "Cosmetic"]
+  },
+  {
+    title: "Whey Protein Jar",
+    description: "High-detail product visualization with label design and soft studio lighting",
+    image: "https://i.imgur.com/OKn8jFu.png",
+    tools: ["Blender", "Cycles", "Packaging"]
+  },
+  {
+    title: "Medical Box Icon",
+    description: "Stylized 3D model of a medical first-aid box for icons or games",
+    image: "https://i.imgur.com/mAt0oNx.jpeg",
+    tools: ["Blender", "Cycles", "Stylized"]
+  },
+  {
+    title: "Coca-Cola Can",
+    description: "Realistic soda can design with branding and reflective aluminum material",
+    image: "https://i.imgur.com/qUoTiaE.jpeg",
+    tools: ["Blender", "Cycles", "Product"]
+  },
+  {
+    title: "Smartphone Mockup",
+    description: "Modern phone concept render with subtle glow and reflections",
+    image: "https://i.imgur.com/rVQYIjW.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Supplement Bottle",
+    description: "Plastic jar for supplement or protein packaging with clean lighting",
+    image: "https://i.imgur.com/vbpaR0Z.jpeg",
+    tools: ["Blender", "Cycles", "Packaging"]
+  },
+  {
+    title: "Spray Bottle",
+    description: "Sleek cosmetic spray bottle design with metallic finish",
+    image: "https://i.imgur.com/zTgt8BF.jpeg",
+    tools: ["Blender", "Cycles", "Cosmetic"]
+  },
+  {
+    title: "Black Tumbler",
+    description: "Stylized tumbler model with glossy black material for product mockups",
+    image: "https://i.imgur.com/CBUV54m.jpeg",
+    tools: ["Blender", "Cycles", "Product"]
+  },
+  {
+    title: "Plastic Kettle",
+    description: "Simple water kettle in solid plastic material for home appliance modeling",
+    image: "https://i.imgur.com/iVbVWX9.jpeg",
+    tools: ["Blender", "Cycles", "Product"]
+  },
+  {
+    title: "Square Perfume Bottle",
+    description: "Dark glass perfume bottle design with minimalist aesthetics",
+    image: "https://i.imgur.com/eeV6JNv.jpeg",
+    tools: ["Blender", "Cycles", "Cosmetic"]
+  },
+  {
+    title: "Woven Basket",
+    description: "Handmade-style 3D basket with realistic weaving pattern",
+    image: "https://i.imgur.com/Z2iyin6.jpeg",
+    tools: ["Blender", "Cycles", "Craft"]
+  },
+  {
+    title: "Bread Rolls",
+    description: "Realistic bakery-style bread rolls with detailed bump texture",
+    image: "https://i.imgur.com/vaRzZun.jpeg",
+    tools: ["Blender", "Cycles", "Food"]
+  },
+  {
+    title: "Safety Goggles",
+    description: "Functional safety eyewear with semi-transparent plastic material",
+    image: "https://i.imgur.com/QXLOsSe.jpeg",
+    tools: ["Blender", "Cycles", "Gear"]
+  },
+  {
+    title: "Halloween Pumpkin",
+    description: "Cute stylized pumpkin with witch hat, great for seasonal content",
+    image: "https://i.imgur.com/bTjoecb.jpeg",
+    tools: ["Blender", "Cycles", "Stylized"]
+  },
+  {
+    title: "Katana Sword",
+    description: "Clean render of a curved Japanese sword with dark lighting setup",
+    image: "https://i.imgur.com/oManWn1.jpeg",
+    tools: ["Blender", "Cycles", "Weapon"]
+  },
+  {
+    title: "Wireless Mouse",
+    description: "Modern mouse design with smooth contours and subtle reflections",
+    image: "https://i.imgur.com/8k8rTah.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Fish Cutting Board",
+    description: "Cartoonish food scene featuring sliced fish on a wooden board",
+    image: "https://i.imgur.com/DwkATyt.png",
+    tools: ["Blender", "Cycles", "Stylized"]
+  }
 ];
-
 
 // Design works data from Instagram
 const designWorks = [
