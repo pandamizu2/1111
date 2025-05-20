@@ -7,9 +7,9 @@ const PortfolioPage = () => {
 
   const categories = [
     { id: 'all', name: 'All Work', icon: <Box className="w-4 h-4" /> },
+    { id: '3d', name: '3D Products', icon: <Box className="w-4 h-4" /> },
     { id: 'design', name: 'Design Works', icon: <Instagram className="w-4 h-4" /> },
-    { id: 'video', name: 'Video Edits', icon: <Youtube className="w-4 h-4" /> },
-    { id: '3d', name: '3D Products', icon: <Box className="w-4 h-4" /> }
+    { id: 'video', name: 'Video Edits', icon: <Youtube className="w-4 h-4" /> }
   ];
 
   const stockPlatforms = [
@@ -106,6 +106,38 @@ const PortfolioPage = () => {
               transition={{ duration: 0.5 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
+              {/* 3D Product Visualizations */}
+              {(activeCategory === 'all' || activeCategory === '3d') && productWorks.map((product, index) => (
+                <motion.div
+                  key={`3d-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
+                >
+                  <div className="relative aspect-square overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <p className="text-white font-medium">{product.title}</p>
+                        <p className="text-white/80 text-sm mt-1">{product.description}</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {product.tools.map((tool, i) => (
+                            <span key={i} className="px-2 py-1 bg-white/20 rounded-full text-white text-xs">
+                              {tool}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+
               {/* Design Works from Instagram */}
               {(activeCategory === 'all' || activeCategory === 'design') && designWorks.map((work, index) => (
                 <motion.div
@@ -163,38 +195,6 @@ const PortfolioPage = () => {
                   </div>
                 </motion.div>
               ))}
-
-              {/* 3D Product Visualizations */}
-              {(activeCategory === 'all' || activeCategory === '3d') && productWorks.map((product, index) => (
-                <motion.div
-                  key={`3d-${index}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
-                >
-                  <div className="relative aspect-square overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <p className="text-white font-medium">{product.title}</p>
-                        <p className="text-white/80 text-sm mt-1">{product.description}</p>
-                        <div className="flex flex-wrap gap-2 mt-2">
-                          {product.tools.map((tool, i) => (
-                            <span key={i} className="px-2 py-1 bg-white/20 rounded-full text-white text-xs">
-                              {tool}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -202,6 +202,118 @@ const PortfolioPage = () => {
     </div>
   );
 };
+
+// 3D product visualization works
+const productWorks = [
+  {
+    title: "Luxury Perfume Bottle",
+    description: "Elegant glass material study with realistic lighting",
+    image: "https://i.imgur.com/NslPjJ3.png",
+    tools: ["Blender", "Cycles", "Cosmetic"]
+  },
+  {
+    title: "Smart Watch Concept",
+    description: "Modern wearable tech visualization",
+    image: "https://i.imgur.com/V6fpOW9.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Eco-Friendly Packaging",
+    description: "Sustainable product packaging design",
+    image: "https://i.imgur.com/OKn8jFu.png",
+    tools: ["Blender", "Cycles", "Product"]
+  },
+  {
+    title: "Premium Smartphone",
+    description: "High-end mobile device visualization",
+    image: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Luxury Watch",
+    description: "Detailed timepiece visualization",
+    image: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    tools: ["Blender", "Cycles", "Luxury"]
+  },
+  {
+    title: "Modern Coffee Machine",
+    description: "Contemporary appliance design",
+    image: "https://images.pexels.com/photos/2878710/pexels-photo-2878710.jpeg",
+    tools: ["Blender", "Cycles", "Appliance"]
+  },
+  {
+    title: "Designer Sunglasses",
+    description: "Fashion accessory visualization",
+    image: "https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg",
+    tools: ["Blender", "Cycles", "Fashion"]
+  },
+  {
+    title: "Electric Vehicle Concept",
+    description: "Futuristic transportation design",
+    image: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg",
+    tools: ["Blender", "Cycles", "Automotive"]
+  },
+  {
+    title: "Premium Speaker",
+    description: "High-fidelity audio equipment",
+    image: "https://images.pexels.com/photos/157557/pexels-photo-157557.jpeg",
+    tools: ["Blender", "Cycles", "Audio"]
+  },
+  {
+    title: "Smart Home Hub",
+    description: "IoT device visualization",
+    image: "https://images.pexels.com/photos/4790255/pexels-photo-4790255.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Luxury Pen Set",
+    description: "Premium writing instruments",
+    image: "https://images.pexels.com/photos/957024/pexels-photo-957024.jpeg",
+    tools: ["Blender", "Cycles", "Luxury"]
+  },
+  {
+    title: "Gaming Controller",
+    description: "Next-gen gaming peripheral",
+    image: "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg",
+    tools: ["Blender", "Cycles", "Gaming"]
+  },
+  {
+    title: "Wireless Earbuds",
+    description: "Modern audio accessory design",
+    image: "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Premium Camera",
+    description: "Professional photography equipment",
+    image: "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg",
+    tools: ["Blender", "Cycles", "Photography"]
+  },
+  {
+    title: "Modern Drone",
+    description: "Aerial photography device",
+    image: "https://images.pexels.com/photos/336232/pexels-photo-336232.jpeg",
+    tools: ["Blender", "Cycles", "Tech"]
+  },
+  {
+    title: "Smart Ring",
+    description: "Wearable tech jewelry",
+    image: "https://images.pexels.com/photos/234798/pexels-photo-234798.jpeg",
+    tools: ["Blender", "Cycles", "Jewelry"]
+  },
+  {
+    title: "Electric Toothbrush",
+    description: "Modern personal care device",
+    image: "https://images.pexels.com/photos/3845981/pexels-photo-3845981.jpeg",
+    tools: ["Blender", "Cycles", "Healthcare"]
+  },
+  {
+    title: "Luxury Wallet",
+    description: "Premium leather goods",
+    image: "https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg",
+    tools: ["Blender", "Cycles", "Fashion"]
+  }
+];
 
 // Design works data from Instagram
 const designWorks = [
@@ -286,46 +398,6 @@ const videoWorks = [
     description: "Quick tips and tricks for creative software",
     embedUrl: "https://youtube.com/shorts/GFXxY-5m6Ek?si=tuSGB781hISREieg",
     url: "https://www.youtube.com/shorts/GFXxY-5m6Ek"
-  }
-];
-
-// 3D product visualization works
-const productWorks = [
-  {
-    title: "Luxury Perfume Bottle",
-    description: "Elegant glass material study with realistic lighting",
-    image: "https://i.imgur.com/NslPjJ3.png",
-    tools: ["Blender", "Cycles", "Cosmetic"]
-  },
-  {
-    title: "Smart Watch Concept",
-    description: "Modern wearable tech visualization",
-    image: "https://i.imgur.com/V6fpOW9.jpeg",
-    tools: ["Blender", "Cycles", "Cosmetic"]
-  },
-  {
-    title: "Eco-Friendly Packaging",
-    description: "Sustainable product packaging design",
-    image: "https://i.imgur.com/OKn8jFu.png",
-    tools: ["Blender", "Cycles", "Product"]
-  },
-  {
-    title: "Gaming Console",
-    description: "Futuristic gaming device concept",
-    image: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
-    tools: ["Blender", "Cycles", "Electronics"]
-  },
-  {
-    title: "Luxury Headphones",
-    description: "High-end audio equipment visualization",
-    image: "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg",
-    tools: ["Blender", "Cycles", "Audio"]
-  },
-  {
-    title: "Modern Furniture",
-    description: "Contemporary furniture design showcase",
-    image: "https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg",
-    tools: ["Blender", "Cycles", "Interior"]
   }
 ];
 
