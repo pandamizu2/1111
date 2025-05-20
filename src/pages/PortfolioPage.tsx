@@ -206,114 +206,114 @@ const PortfolioPage = () => {
 // 3D product visualization works
 const productWorks = [
   {
-    title: "Luxury Perfume Bottle",
-    description: "Elegant glass material study with realistic lighting",
-    image: "https://i.imgur.com/NslPjJ3.png",
-    tools: ["Blender", "Cycles", "Cosmetic"]
-  },
-  {
-    title: "Smart Watch Concept",
-    description: "Modern wearable tech visualization",
-    image: "https://i.imgur.com/V6fpOW9.jpeg",
-    tools: ["Blender", "Cycles", "Tech"]
-  },
-  {
-    title: "Eco-Friendly Packaging",
-    description: "Sustainable product packaging design",
-    image: "https://i.imgur.com/OKn8jFu.png",
-    tools: ["Blender", "Cycles", "Product"]
-  },
-  {
-    title: "Premium Smartphone",
-    description: "High-end mobile device visualization",
-    image: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
-    tools: ["Blender", "Cycles", "Tech"]
-  },
-  {
-    title: "Luxury Watch",
-    description: "Detailed timepiece visualization",
-    image: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
-    tools: ["Blender", "Cycles", "Luxury"]
-  },
-  {
-    title: "Modern Coffee Machine",
-    description: "Contemporary appliance design",
-    image: "https://images.pexels.com/photos/2878710/pexels-photo-2878710.jpeg",
-    tools: ["Blender", "Cycles", "Appliance"]
-  },
-  {
-    title: "Designer Sunglasses",
-    description: "Fashion accessory visualization",
-    image: "https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg",
-    tools: ["Blender", "Cycles", "Fashion"]
-  },
-  {
-    title: "Electric Vehicle Concept",
-    description: "Futuristic transportation design",
-    image: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg",
-    tools: ["Blender", "Cycles", "Automotive"]
-  },
-  {
-    title: "Premium Speaker",
-    description: "High-fidelity audio equipment",
-    image: "https://images.pexels.com/photos/157557/pexels-photo-157557.jpeg",
-    tools: ["Blender", "Cycles", "Audio"]
-  },
-  {
-    title: "Smart Home Hub",
-    description: "IoT device visualization",
-    image: "https://images.pexels.com/photos/4790255/pexels-photo-4790255.jpeg",
-    tools: ["Blender", "Cycles", "Tech"]
-  },
-  {
-    title: "Luxury Pen Set",
-    description: "Premium writing instruments",
-    image: "https://images.pexels.com/photos/957024/pexels-photo-957024.jpeg",
-    tools: ["Blender", "Cycles", "Luxury"]
-  },
-  {
-    title: "Gaming Controller",
-    description: "Next-gen gaming peripheral",
-    image: "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg",
-    tools: ["Blender", "Cycles", "Gaming"]
-  },
-  {
-    title: "Wireless Earbuds",
-    description: "Modern audio accessory design",
-    image: "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg",
-    tools: ["Blender", "Cycles", "Tech"]
-  },
-  {
-    title: "Premium Camera",
-    description: "Professional photography equipment",
-    image: "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg",
-    tools: ["Blender", "Cycles", "Photography"]
-  },
-  {
-    title: "Modern Drone",
-    description: "Aerial photography device",
-    image: "https://images.pexels.com/photos/336232/pexels-photo-336232.jpeg",
-    tools: ["Blender", "Cycles", "Tech"]
-  },
-  {
-    title: "Smart Ring",
-    description: "Wearable tech jewelry",
-    image: "https://images.pexels.com/photos/234798/pexels-photo-234798.jpeg",
-    tools: ["Blender", "Cycles", "Jewelry"]
-  },
-  {
-    title: "Electric Toothbrush",
-    description: "Modern personal care device",
-    image: "https://images.pexels.com/photos/3845981/pexels-photo-3845981.jpeg",
-    tools: ["Blender", "Cycles", "Healthcare"]
-  },
-  {
-    title: "Luxury Wallet",
-    description: "Premium leather goods",
-    image: "https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg",
-    tools: ["Blender", "Cycles", "Fashion"]
-  }
+  title: "Dish Soap Bottle",
+  description: "Stylized transparent plastic bottle with colored liquid and realistic lighting",
+  image: "https://i.imgur.com/NslPjJ3.png",
+  tools: ["Blender", "Cycles", "Product"]
+},
+{
+  title: "Minimalist Perfume Bottle",
+  description: "Frosted glass material with subtle reflections for a luxury cosmetic look",
+  image: "https://i.imgur.com/V6fpOW9.jpeg",
+  tools: ["Blender", "Cycles", "Cosmetic"]
+},
+{
+  title: "Whey Protein Jar",
+  description: "High-detail product visualization with label design and soft studio lighting",
+  image: "https://i.imgur.com/OKn8jFu.png",
+  tools: ["Blender", "Cycles", "Packaging"]
+},
+{
+  title: "Medical Box Icon",
+  description: "Stylized 3D model of a medical first-aid box for icons or games",
+  image: "https://i.imgur.com/mAt0oNx.jpeg",
+  tools: ["Blender", "Cycles", "Stylized"]
+},
+{
+  title: "Coca-Cola Can",
+  description: "Realistic soda can design with branding and reflective aluminum material",
+  image: "https://i.imgur.com/qUoTiaE.jpeg",
+  tools: ["Blender", "Cycles", "Product"]
+},
+{
+  title: "Smartphone Mockup",
+  description: "Modern phone concept render with subtle glow and reflections",
+  image: "https://i.imgur.com/rVQYIjW.jpeg",
+  tools: ["Blender", "Cycles", "Tech"]
+},
+{
+  title: "Supplement Bottle",
+  description: "Plastic jar for supplement or protein packaging with clean lighting",
+  image: "https://i.imgur.com/vbpaR0Z.jpeg",
+  tools: ["Blender", "Cycles", "Packaging"]
+},
+{
+  title: "Spray Bottle",
+  description: "Sleek cosmetic spray bottle design with metallic finish",
+  image: "https://i.imgur.com/zTgt8BF.jpeg",
+  tools: ["Blender", "Cycles", "Cosmetic"]
+},
+{
+  title: "Black Tumbler",
+  description: "Stylized tumbler model with glossy black material for product mockups",
+  image: "https://i.imgur.com/CBUV54m.jpeg",
+  tools: ["Blender", "Cycles", "Product"]
+},
+{
+  title: "Plastic Kettle",
+  description: "Simple water kettle in solid plastic material for home appliance modeling",
+  image: "https://i.imgur.com/iVbVWX9.jpeg",
+  tools: ["Blender", "Cycles", "Product"]
+},
+{
+  title: "Square Perfume Bottle",
+  description: "Dark glass perfume bottle design with minimalist aesthetics",
+  image: "https://i.imgur.com/eeV6JNv.jpeg",
+  tools: ["Blender", "Cycles", "Cosmetic"]
+},
+{
+  title: "Woven Basket",
+  description: "Handmade-style 3D basket with realistic weaving pattern",
+  image: "https://i.imgur.com/Z2iyin6.jpeg",
+  tools: ["Blender", "Cycles", "Craft"]
+},
+{
+  title: "Bread Rolls",
+  description: "Realistic bakery-style bread rolls with detailed bump texture",
+  image: "https://i.imgur.com/vaRzZun.jpeg",
+  tools: ["Blender", "Cycles", "Food"]
+},
+{
+  title: "Safety Goggles",
+  description: "Functional safety eyewear with semi-transparent plastic material",
+  image: "https://i.imgur.com/QXLOsSe.jpeg",
+  tools: ["Blender", "Cycles", "Gear"]
+},
+{
+  title: "Halloween Pumpkin",
+  description: "Cute stylized pumpkin with witch hat, great for seasonal content",
+  image: "https://i.imgur.com/bTjoecb.jpeg",
+  tools: ["Blender", "Cycles", "Stylized"]
+},
+{
+  title: "Katana Sword",
+  description: "Clean render of a curved Japanese sword with dark lighting setup",
+  image: "https://i.imgur.com/oManWn1.jpeg",
+  tools: ["Blender", "Cycles", "Weapon"]
+},
+{
+  title: "Wireless Mouse",
+  description: "Modern mouse design with smooth contours and subtle reflections",
+  image: "https://i.imgur.com/8k8rTah.jpeg",
+  tools: ["Blender", "Cycles", "Tech"]
+},
+{
+  title: "Fish Cutting Board",
+  description: "Cartoonish food scene featuring sliced fish on a wooden board",
+  image: "https://i.imgur.com/DwkATyt.png",
+  tools: ["Blender", "Cycles", "Stylized"]
 ];
+
 
 // Design works data from Instagram
 const designWorks = [
