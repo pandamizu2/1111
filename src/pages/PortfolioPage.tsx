@@ -376,6 +376,66 @@ const designWorks = [
     title: "Social Media Kit",
     description: "Cohesive social media template design",
     image: "https://images.pexels.com/photos/5082566/pexels-photo-5082566.jpeg"
+  },
+  {
+    title: "Restaurant Menu Design",
+    description: "Elegant menu layout with food photography integration",
+    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
+  },
+  {
+    title: "Book Cover Design",
+    description: "Minimalist book cover with typography focus",
+    image: "https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg"
+  },
+  {
+    title: "Business Card Collection",
+    description: "Modern business card designs with unique finishes",
+    image: "https://images.pexels.com/photos/6120214/pexels-photo-6120214.jpeg"
+  },
+  {
+    title: "Annual Report Design",
+    description: "Corporate report with infographics and data visualization",
+    image: "https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg"
+  },
+  {
+    title: "Product Catalog",
+    description: "Clean and modern product catalog layout",
+    image: "https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg"
+  },
+  {
+    title: "Wedding Invitation Suite",
+    description: "Elegant invitation design with custom illustrations",
+    image: "https://images.pexels.com/photos/7319316/pexels-photo-7319316.jpeg"
+  },
+  {
+    title: "Billboard Design",
+    description: "Large format advertising with strong visual impact",
+    image: "https://images.pexels.com/photos/2346594/pexels-photo-2346594.jpeg"
+  },
+  {
+    title: "App Icon Design",
+    description: "Modern app icons with gradient and depth",
+    image: "https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg"
+  },
+  {
+    title: "Packaging Collection",
+    description: "Series of coordinated product packaging designs",
+    image: "https://images.pexels.com/photos/4466553/pexels-photo-4466553.jpeg"
+  },
+  {
+    title: "Newsletter Template",
+    description: "Email newsletter design with responsive layout",
+    image: "https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg"
+  },
+  {
+    title: "Logo Collection",
+    description: "Various logo designs for different industries",
+    image: "https://images.pexels.com/photos/6120215/pexels-photo-6120215.jpeg"
+  },
+  {
+    title: "Product Label Design",
+    description: "Custom label designs for beverage products",
+    image: "https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg"
   }
 ];
 
